@@ -195,6 +195,7 @@ text-decoration: none;
     background-color:#188CE8;
 }
 
+
 /* -----------------------------------features---------------------------------------------- */
 
 .section {
@@ -204,9 +205,9 @@ text-decoration: none;
 
 .features-item-list {
     display: flex;
-    width: 270px;
     height: 120px;
     align-items: center;
+    justify-content: center;
     background-color:#F5F4FA ;
     border-radius: 4px;
     margin-bottom: 30px;
@@ -361,9 +362,6 @@ text-decoration: none;
     fill: #AFB1B8;
 }
 
-/* .clients-icon {
-    fill: #AFB1B8;
-} */
 
 .clients-link:hover , .clients-link:focus {
     border: 1px solid var(--accent-colour) ;
@@ -371,10 +369,7 @@ text-decoration: none;
     fill: var(--accent-colour);
 }
 
-/* .clients-link:hover,
-.clients-link:focus .clients-icon {
-    fill: var(--accent-colour);
-} */
+
 
 
 /* --------------------------------------------footer--------------------------------------------- */
@@ -386,6 +381,8 @@ text-decoration: none;
 
 .footer-wrap {
     display: flex;
+    align-items: baseline;
+
 }
 
 .footer-address {
@@ -438,12 +435,12 @@ text-decoration: none;
 .address-item:not(:last-child) {
     margin-bottom: 9px;
 }
-
+/* 
 .footer-social {
     width: 206px;
     height: 80px;
     margin-top: 12px;
-}
+} */
 
 .footer-social-text {
     font-weight: 700;
@@ -511,13 +508,10 @@ text-decoration: none;
         padding: 6px 22px;
 }
 
-.navigation-item:hover , .navigation-item:focus {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
 .navigation-btn:hover, .navigation-btn:focus {
     background-color: var(--accent-colour);
     color: var(--white-colour);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .project-list {
@@ -526,10 +520,15 @@ text-decoration: none;
     margin: -15px;
 }
 
+.project-link {
+    display: block;
+}
 
-.project-item:hover {
+.project-link:hover {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
+
+
 
 .project-item {
     width: calc(100%/3-30);
