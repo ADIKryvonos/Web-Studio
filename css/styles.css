@@ -259,6 +259,30 @@ text-decoration: none;
     display: flex;
     gap: 30px;
 }
+
+.develop-item {
+    position: relative;
+}
+
+.develop-text {
+    position: absolute;
+    bottom: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-colour);
+    background-color: rgba(47, 48, 58, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+}
+
+
 /* ----------------------------------------team------------------------------------------------ */
 .team {
     background-color: var(--third-bg-colour);
@@ -526,8 +550,8 @@ text-decoration: none;
 }
 
 .project-item .project-link:hover {
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    }
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
 
 .project-item {
     width: calc(100%/3-30);
