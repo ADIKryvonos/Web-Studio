@@ -759,6 +759,10 @@ padding: 20px 24px;
     position: relative;
 }
 
+.checkbox {
+    margin-bottom: 30px;
+}
+
 .name-icon {
     position: absolute;
     left: 14px;
