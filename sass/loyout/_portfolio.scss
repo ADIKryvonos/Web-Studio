@@ -24,7 +24,6 @@
     padding: 6px 22px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
     &:hover,
     &:focus {
         background-color: var(--accent-colour);
@@ -41,14 +40,13 @@
 
 .project-link {
     display: block;
-
     &:hover {
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     }
 }
 
 .project-item {
-    width: calc(100%/3-30);
+    width: calc(100%/3 - 30px);
     margin: 15px;
 }
 
