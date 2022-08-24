@@ -1,13 +1,16 @@
-@import "./utils/vars";
+@import "./utils/variables";
+@import "./utils/visually-hiden";
 @import "./base/reset";
-@import "./components/components";
+@import "./base/container";
+@import "./base/section";
+@import "./base/list-link";
 @import "./components/modal";
 
-@import "./loyout/header";
-@import "./loyout/promo";
-@import "./loyout/features";
-@import "./loyout/develop";
-@import "./loyout/team";
-@import "./loyout/client";
-@import "./loyout/footer";
-@import "./loyout/portfolio";
+@import "./components/header";
+@import "./components/promo";
+@import "./components/features";
+@import "./components/develop";
+@import "./components/team";
+@import "./components/client";
+@import "./components/footer";
+@import "./components/portfolio";

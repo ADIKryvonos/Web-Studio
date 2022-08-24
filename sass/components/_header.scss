@@ -3,16 +3,11 @@
     padding-top: 24px;
     padding-bottom: 25px;
     border-bottom: 1px solid #ECECEC;
-    >span {
-        color: var(--title-text-colour);
-        }
-    >.container {
-        display: flex;
-        align-items: center;
+    > .container {
+            display: flex;
+            align-items: center;
         }
 }
-
-
 
 .header-logo {
     font-family: 'Raleway', sans-serif;
@@ -22,6 +17,9 @@
     color: var(--accent-colour);
     margin-right: 93px;
     font-weight: 700;
+    >span {
+            color: var(--title-text-colour);
+        }
 }
 
 
