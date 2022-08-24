@@ -22,7 +22,7 @@
         }
 }
 
-.modal-button {
+.modal__button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,7 +49,7 @@
 }
 
 
-.modal-title {
+.modal__title {
     font-weight: 700;
     font-size: 20px;
     line-height: calc(23/20);
@@ -58,26 +58,22 @@
     margin-bottom: 12px;
 }
 
-.input-wrap {
+.form__wrap {
     position: relative;
 }
 
-.checkbox {
-    margin-bottom: 30px;
-}
-
-.name-icon {
+.form__icon {
     position: absolute;
     left: 14px;
     top: 50%;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    .modal-input:focus + & {
+    .form__input:focus + & {
         fill: var(--accent-colour);
     }
 }
 
-.modal-input {
+.form__input {
     width: 100%;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -95,7 +91,7 @@
     }
 }
 
-.modal-label {
+.form__label {
     display: block;
     font-size: 12px;
     line-height: calc(14/12);
@@ -107,7 +103,7 @@
     }
 }
 
-.modal-text {
+.form__text {
     width: 448px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -132,31 +128,7 @@
     }
 }
 
-.user-button {
-    width: 200px;
-    height: 50px;
-    color: var(--white-colour);
-    background-color: var(--accent-colour);
-    border-radius: 4px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border: none;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(30/16);
-    display: block;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 0.06em;
-    margin: auto;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-        background-color: #188CE8;
-    }
-}
-
-.policy-text {
+.policy__text {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -164,6 +136,7 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
+    margin-bottom: 30px;
     span {
         display: flex;
         height: 15px;
@@ -185,17 +158,42 @@
     }
 }
 
-.policy-icon {
+.policy__icon {
     fill: transparent;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    .policy:checked + .policy-text & {
+    .policy:checked + .policy__text & {
         fill: var(--white-colour);
     }
 }
 
-.contract {
+.policy__contract {
     color: var(--accent-colour);
     text-decoration: underline;
     margin-left: 5px;
     cursor: pointer;
+}
+
+.policy__button {
+    width: 200px;
+    height: 50px;
+    color: var(--white-colour);
+    background-color: var(--accent-colour);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+    display: block;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.06em;
+    margin: auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+    }
 }

@@ -1,4 +1,4 @@
-.clients-title {
+.clients__title {
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42/36);
@@ -7,14 +7,14 @@
     margin-bottom: 50px;
 }
 
-.clients-list {
+.clients-card {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
 }
 
-.clients-link {
+.clients-card__link {
     display: flex;
     align-items: center;
     justify-content: center;

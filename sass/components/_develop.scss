@@ -2,7 +2,7 @@
     padding-top: 0;
 }
 
-.develop-title {
+.develop__title {
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42/36);
@@ -12,16 +12,16 @@
     margin-bottom: 50px;
 }
 
-.develop-list {
+.create {
     display: flex;
     gap: 30px;
 }
 
-.develop-item {
+.create__item {
     position: relative;
 }
 
-.develop-text {
+.create__text {
     position: absolute;
     bottom: 0;
     font-weight: 700;
