@@ -1,7 +1,9 @@
 @import "./utils/vars";
 @import "./base/reset";
 @import "./components/components";
+@import "./components/modal";
 
+@import "./loyout/portfolio";
 @import "./loyout/header";
 @import "./loyout/promo";
 @import "./loyout/features";
@@ -9,4 +11,3 @@
 @import "./loyout/team";
 @import "./loyout/client";
 @import "./loyout/footer";
-@import "./loyout/modal";
