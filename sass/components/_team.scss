@@ -3,11 +3,9 @@
 }
 
 .team__title {
+    @include font(36px, calc(42/36), 0.03em);
     font-weight: 700;
-    font-size: 36px;
-    line-height: calc(42/36);
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--title-text-colour);
     margin-bottom: 50px;
 }
@@ -30,22 +28,18 @@
 
 
 .card__title {
+    @include font(16px, calc(19/16), 0.03em);
     font-weight: 500;
-    line-height: calc(19/16);
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--title-text-colour);
     margin-bottom: 10px;
-    font-size: 16px;
 }
 
 .card__text {
-    line-height: calc(19/16);
+    @include font(16px, calc(19/16), 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--primary-text-colour);
     margin-bottom: 16px;
-    font-size: 16px;
 }
 
 .social {

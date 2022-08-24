@@ -12,3 +12,9 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+@mixin font($fs, $lh, $ls) {
+    font-size: $fs;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
