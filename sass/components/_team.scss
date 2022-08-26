@@ -1,16 +1,8 @@
-.team {
+.section--other-bgc {
     background-color: var(--third-bg-colour);
 }
 
-.team__title {
-    @include font(36px, calc(42/36), 0.03em);
-    font-weight: 700;
-    text-align: center;
-    color: var(--title-text-colour);
-    margin-bottom: 50px;
-}
-
-.team__list {
+.team {
     display: flex;
     gap: 30px;
 }
@@ -21,13 +13,13 @@
     border-radius: 0px 0px 4px 4px;
 }
 
-.card {
+.team__card {
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
 
-.card__title {
+.team__card-title {
     @include font(16px, calc(19/16), 0.03em);
     font-weight: 500;
     text-align: center;
@@ -35,7 +27,7 @@
     margin-bottom: 10px;
 }
 
-.card__text {
+.team__card-text {
     @include font(16px, calc(19/16), 0.03em);
     text-align: center;
     color: var(--primary-text-colour);

@@ -4,9 +4,9 @@
     padding-bottom: 25px;
     border-bottom: 1px solid #ECECEC;
     > .container {
-            display: flex;
-            align-items: center;
-        }
+        display: flex;
+        align-items: center;
+    }
 }
 
 .logo {
@@ -41,7 +41,7 @@
         }
 }
 
-.active {
+.navigation__link--active {
     position: relative;
     &::after {
         position: absolute;
@@ -79,7 +79,7 @@
         }
 }
 
-.contacts__img {
+.contacts__icon {
     fill: currentColor;
     &:focus,
     &:hover {
