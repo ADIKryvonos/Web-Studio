@@ -49,6 +49,16 @@ address {
   font-style: normal;
 }
 
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+no-scroll {
+  overflow: hidden;
+}
+
 .container {
   width: 100%;
   margin-left: auto;
@@ -458,8 +468,8 @@ address {
 }
 @media screen and (min-width: 768px) {
   .contact {
-    display: block;
-    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -469,10 +479,11 @@ address {
   }
 }
 
-.contacts__item {
-  margin-bottom: 10px;
+@media screen and (min-width: 768px) {
+  .contacts__item {
+    margin-bottom: 10px;
+  }
 }
-
 .contacts__item:not(:last-child) {
   margin-right: 30px;
 }
@@ -537,6 +548,7 @@ address {
   height: 100vh;
   background-color: var(--white-colour);
   top: 0;
+  z-index: 2;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
@@ -954,14 +966,30 @@ address {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer__wrap-adrsoc {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+}
 .footer__address {
   margin-bottom: 60px;
   margin-right: auto;
   margin-left: auto;
 }
+@media screen and (min-width: 768px) {
+  .footer__address {
+    margin-right: 165px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__address {
     margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 
@@ -1022,6 +1050,11 @@ address {
 
 .footer-social {
   margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer-social {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-social {
@@ -1116,7 +1149,6 @@ address {
   color: rgba(255, 255, 255, 0.6);
   padding: 15px 16px;
   outline: none;
-  margin-right: 10px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-bottom: 20px;
 }
@@ -1132,6 +1164,7 @@ address {
   .mailing__input {
     width: 358px;
     margin-bottom: 0;
+    margin-right: 10px;
   }
 }
 
