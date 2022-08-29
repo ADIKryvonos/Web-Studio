@@ -8,8 +8,8 @@
     display: block;
 
     @include desktop {
-            display: flex;
-            align-items: baseline;
+        display: flex;
+        align-items: baseline;
         }
 
 }
@@ -51,20 +51,28 @@
     >span {
         color: var(--white-colour);
     }
+    @include desktop {
+        justify-content: left;
+    }
 }
 
 .address {
     margin-top: 20px;
     width: 231px;
     height: 81px;
-    margin-right: auto;
-    margin-left: auto;
+    @include mobile {
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 .address__item {
     display: flex;
     align-items: center;
     justify-content: center;
+    @include desktop {
+        justify-content: flex-start;
+    }
 }
 
 .address__item:not(:last-child) {
@@ -109,7 +117,7 @@
     color: var(--white-colour);
     margin-bottom: 20px;
     @include desktop {
-        text-align: none;
+        text-align: left;
         }
 }
 
@@ -152,7 +160,7 @@
     color: var(--white-colour);
     margin-bottom: 20px;
     @include desktop {
-        text-align: none;
+        text-align: left;
     }
 }
 

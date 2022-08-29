@@ -1007,19 +1007,33 @@ no-scroll {
 .footer__logo > span {
   color: var(--white-colour);
 }
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    justify-content: left;
+  }
+}
 
 .address {
   margin-top: 20px;
   width: 231px;
   height: 81px;
-  margin-right: auto;
-  margin-left: auto;
+}
+@media screen and (min-width: 480px) {
+  .address {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .address__item {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .address__item {
+    justify-content: flex-start;
+  }
 }
 
 .address__item:not(:last-child) {
@@ -1074,7 +1088,7 @@ no-scroll {
 }
 @media screen and (min-width: 1200px) {
   .footer-social__text {
-    text-align: none;
+    text-align: left;
   }
 }
 
@@ -1119,7 +1133,7 @@ no-scroll {
 }
 @media screen and (min-width: 1200px) {
   .mailing__title {
-    text-align: none;
+    text-align: left;
   }
 }
 
@@ -1203,17 +1217,51 @@ no-scroll {
 .filter__list {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 8px;
-  margin-bottom: 50px;
-  justify-content: center;
+  row-gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .filter__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+  }
+}
+
+.filter__item:nth-child(3) {
+  margin-right: 20px;
+}
+@media screen and (min-width: 768px) {
+  .filter__item:nth-child(3) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter__item:nth-child(3) {
+    margin-right: 0;
+  }
 }
 
 .filter__btn {
+  display: block;
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  display: block;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-colour);
   background-color: var(--third-bg-colour);
@@ -1234,8 +1282,19 @@ no-scroll {
 
 .project {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   margin: -15px;
+}
+@media screen and (min-width: 768px) {
+  .project {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project {
+    flex-direction: row;
+  }
 }
 
 .project__link {
@@ -1246,8 +1305,17 @@ no-scroll {
 }
 
 .project__item {
-  width: calc(33.3333333333% - 30px);
   margin: 15px;
+}
+@media screen and (min-width: 768px) {
+  .project__item {
+    width: calc(50% - 30px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project__item {
+    width: calc(33.3333333333% - 30px);
+  }
 }
 
 .product-details {
