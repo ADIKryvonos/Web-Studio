@@ -1,11 +1,20 @@
 .header {
     background-color: var(--white-colour);
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     border-bottom: 1px solid #ECECEC;
     > .container {
         display: flex;
         align-items: center;
+    }
+    @include tablet {
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
+        
+    @include desktop {
+        padding-top: 24px;
+        padding-bottom: 25px;
     }
 }
 
@@ -22,8 +31,15 @@
 
 
 .navigation__list {
-    display: flex;
+    display: none;
     margin-left: auto;
+    @include tablet {
+        display: flex;
+        }
+    
+    @include desktop {
+        display: flex;
+        }
 }
 
 .navigation__item:not(:last-child) {
@@ -56,8 +72,16 @@
 }
 
 .contact {
-    display: flex;
+    display: none;
     margin-left: auto;
+
+    @include tablet {
+    display: block;
+    }
+    
+    @include desktop {
+    display: flex;
+    }
 }
 
 .contacts__item:not(:last-child) {
@@ -83,6 +107,120 @@
     fill: currentColor;
     &:focus,
     &:hover {
-            color: var(--accent-colour);
+        color: var(--accent-colour);
+    }
+}
+
+.header__container-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    content: "";
+    top: 10px;
+    right: 15px;
+    background-color: inherit;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+    @include tablet {
+        display: none;
+    }
+    
+    @include desktop {
+        display: none;
+    }
+}
+
+.mob-menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--white-colour);
+    top: 0;
+    z-index: 2;
+    @include tablet {
+            display: none;
         }
+    
+        @include desktop {
+            display: none;
+        }
+    > .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        overflow: auto;
+    }
+}
+
+.mob-menu .mob-menu__container {
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 48px;
+    margin: 0;
+}
+
+.mob-menu__button {
+    display: block;
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+    background-color: inherit;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.mob__nav-item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.mob__nav-link {
+    @include font(40px, 1.17 , 0.02em);
+    font-weight: 500;
+    color: var(--title-text-colour);
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover , &:focus {
+        color: var(--accent-colour);
+    }
+}
+
+.mob__contact-item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.mob__contact-tel {
+    @include font(34px, 1.18, 0.02em);
+    font-weight: 500;
+    color: var(--accent-colour);
+}
+
+.mob__contact-mail {
+    @include font(24px, 1.17, 0.02em);
+    font-weight: 500;
+    color: var(--primary-text-colour);
+}
+
+.mob__contact-list {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 64px;
+
+}
+
+.mob__contact-link {
+    @include font(18px, 1.22, 0.02em);
+    font-weight: 500;
+    color: var(--accent-colour);
+}
+
+.mob__contact-list-item:not(:last-child) {
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
