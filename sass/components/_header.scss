@@ -8,15 +8,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        @include mobile {
-            max-width: 767px;
-        }
-        @include tablet {
-            max-width: 1199px;
-        }
-        @include desktop {
-            max-width: 1600px;
-        }
     }
     @include tablet {
         padding-top: 21px;
@@ -119,6 +110,9 @@
 .contacts__item:not(:last-child) {
     @include tablet {
         margin-bottom: 10px;
+    }
+    @include desktop {
+        margin-bottom: 0;
     }
 }
 
